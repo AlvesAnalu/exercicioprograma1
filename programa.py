@@ -1,5 +1,4 @@
 from funcoes import posicao_valida, preenche_frota
-
 frota = {}
 embarcacoes = [['porta-aviões', 4, 1],['navio-tanque', 3, 2],['contratorpedeiro', 2, 3],['submarino', 1, 4]]
 for embarcacao in embarcacoes:
