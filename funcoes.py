@@ -43,7 +43,7 @@ def afundados(frota, tabuleiro):
             for posicao in navio:
                 linha= posicao[0]
                 coluna= posicao[1]
-                if tabuleira[linha][coluna] == 'X':
+                if tabuleiro[linha][coluna] == 'X':
                     acertos+= 1
             if acertos == len(navio):
                 contagem+= 1
