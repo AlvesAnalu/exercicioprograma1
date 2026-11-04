@@ -7,9 +7,9 @@ for embarcacao in embarcacoes:
     tamanho = embarcacao[1]
     quantidade = embarcacao[2]
     for i in range(quantidade):
-        print(f'Insira as informações referentes ao navio {nome} que possui tamanho {tamanho}')
         valida = False
         while not valida:
+            print(f'Insira as informações referentes ao navio {nome} que possui tamanho {tamanho}')
             linha = int(input('Linha: '))
             coluna = int(input('Coluna: '))
             if tamanho > 1:
