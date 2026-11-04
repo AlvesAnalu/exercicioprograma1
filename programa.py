@@ -1,3 +1,5 @@
+from funcoes import posicao_valida, preenche_frota
+
 frota = {}
 embarcacoes = [['porta-aviões', 4, 1],['navio-tanque', 3, 2],['contratorpedeiro', 2, 3],['submarino', 1, 4]]
 for embarcacao in embarcacoes:
@@ -18,7 +20,6 @@ for embarcacao in embarcacoes:
                     orientacao = 'horizontal'
             else:
                 orientacao = 'vertical'
-
             valida = posicao_valida(frota, linha, coluna, orientacao, tamanho)
             if not valida:
                 print('Esta posição não está válida!')
