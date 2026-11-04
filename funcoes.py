@@ -47,8 +47,19 @@ def afundados(frota, tabuleiro):
                     acertos+= 1
             if acertos == len(navio):
                 contagem+= 1
-
     return contagem
 
+def posicao_valida(frota, linha, coluna, orientacao, tamanho):
+    posicoes= define_posicoes(linha, coluna, orientacao, tamanho)
+    for posicao in posicoes:
+        linha_atual= posicoes[0]
+        coluna_atual= posicoes[1]
+        if linha_atual<0 or linha_atual>=10:
+            return False
+        for nome_navio in frota:
+           for navio in frota[nome_navio]:
+               if posicao in navio:
+                   return False
+    return True
 
 
