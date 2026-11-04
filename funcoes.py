@@ -56,6 +56,8 @@ def posicao_valida(frota, linha, coluna, orientacao, tamanho):
         coluna_atual= posicao[1]
         if linha_atual<0 or linha_atual>=10:
             return False
+        if coluna_atual<0 or coluna_atual>=10:
+            return False
         for nome_navio in frota:
            for navio in frota[nome_navio]:
                if posicao in navio:
